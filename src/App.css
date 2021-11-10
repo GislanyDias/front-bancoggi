@@ -1,38 +1,407 @@
-.App {
-  text-align: center;
+@charset "UTF-8";
+
+
+:root{
+    --cor-principal: #592848;
+    --cor-secundaria: #f2f2f2;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+html, body {
+    height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/**************** STYLE DO HOME **************/
+
+
+.cabecalho {
+    width: auto;
+    margin-top: -25px;
+    height: 72px;
+    padding-left: 30px;
+    padding-top: 38px;
+    letter-spacing: 2px;
+    background-color: var(--cor-principal);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.line-vertical{
+    position: absolute;
+    background-color: var(--cor-secundaria);
+    height: 70px;
+    width: 1px;
+    margin-left: 115px;
+    margin-top: -77px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.logo-home{
+    position:absolute;
+    width: 67px;
+    margin-top: -75px;
+    margin-left: 35px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.butt-login{
+    position: absolute;
+    background-color: var(--cor-secundaria);
+    width: 180px;
+    height: 43px;
+    color: var(--cor-principal);
+    border: none;
+    border-radius: 9px;
+    margin-top: -65px;
+    font-size: 11pt;
+    font-weight: bold;
+    margin-left: 837px;
+    letter-spacing: 1px;
+}
+
+
+.butt-cadas{
+    position: absolute;
+    background-color: var(--cor-principal);
+    width: 180px;
+    height: 43px;
+    color: var(--cor-secundaria);
+    border: 3px solid var(--cor-secundaria);
+    border-radius: 9px;
+    margin-top: -65px;
+    font-size: 11pt;
+    font-weight: bold;
+    margin-left: 1046px;
+    letter-spacing: 1px;
+}
+
+.logo-principal{
+    width: 500px;
+    margin-left: 760px;
+    margin-top: 36px;
+}
+
+.nome-ggi{
+    margin-top: -470px;
+    font-size: 70pt;
+    margin-left: 35px;
+    color: var(--cor-principal);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+.subtit{
+    margin-left: 36px;
+    margin-top: -70px;
+    color: var(--cor-principal);
+    letter-spacing: 1px;
+    font-weight:500;
+    font-size: 19pt;
+}
+
+.text-home{
+    margin-left: 36px;
+    color: var(--cor-principal);
+    letter-spacing: 1px;
+    width: 500px;
+    font-style: italic;
+    margin-top: 70px;
+    font-size: 20pt;
+}
+
+
+/**************** STYLE DO RODAPE **************/
+
+.rodape{
+    position:absolute;
+    width: 100%;
+    height: 62px;
+    text-align: center;
+    line-height: 7px;
+    padding-top: 2px;
+    background-color: var(--cor-principal);
+    margin-top: 210px;
+ 
+}
+
+.rodape p{
+    font-size: 11pt;
+    letter-spacing: 1.3px;
+    color: var(--cor-secundaria)
+
+}
+
+.rodape a{
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+
+/**************** STYLE DOS HOVERS PARA OS BOTÕES **************/
+
+button:hover{
+    box-shadow: 2px 2px 7px black;
+    cursor:pointer;
+}
+
+.rodape a:hover{
+    text-decoration: underline;
+}
+
+
+/**************** STYLE DO LOGIN **************/
+
+.div-login{
+    position: relative;
+    background-color: var(--cor-principal);
+    width: 350px;
+    height: 420px;
+    border-radius: 10px;
+    margin: -450px auto -100px auto;
+    padding: 4px;
+}
+
+.tit-div-login, .tit-div-cadas{
+    text-align: center;
+    color: var(--cor-secundaria);
+    font-size: 12pt;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+hr{
+    color: var(--cor-secundaria);
+}
+
+.form-login, .form-cadas{
+    margin: 45px 35px 0px 30px;
+
+}
+
+.form-login, .form-cadas p{
+    color: var(--cor-secundaria);
+    font-size: 10.5pt;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.form-login input, .form-cadas input{
+    width: 97%;
+    background-color: var(--cor-secundaria);
+    height: 30px;
+    border-radius: 5px;
+
+}
+
+.form-login .butt-entrar{
+    color: var(--cor-secundaria);
+    border: 3px solid var(--cor-secundaria);
+    background-color: var(--cor-principal);
+    border-radius: 9px;
+    width: 180px;
+    height: 43px;
+    font-size: 11pt;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: block;
+    margin: 45px auto;
+}
+
+.form-login .back-login{
+    font-size: 8pt;
+    display: block;
+    margin: -9px auto auto;
+    width: 90px;
+    color: var(--cor-secundaria);
+    border: 1px solid var(--cor-secundaria);
+    background-color: var(--cor-principal);
+    padding: 4px;
+    border-radius: 4px;
+
+}
+
+
+/**************** STYLE DO CADASTRO **************/
+
+.div-cadastro{
+    position: relative;
+    background-color: var(--cor-principal);
+    width: 450px;
+    height: 750px;
+    border-radius: 10px;
+    margin: -450px auto -100px auto;
+    padding: 4px;
+}
+
+
+.form-cadas .butt-cadas{
+    color: var(--cor-secundaria);
+    border: 3px solid var(--cor-secundaria);
+    background-color: var(--cor-principal);
+    border-radius: 9px;
+    width: 180px;
+    height: 43px;
+    font-size: 11pt;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: block;
+    margin-top: 50px;
+    margin-left: 103px;
+
+}
+
+.form-cadas .back-cadas{
+    font-size: 8pt;
+    display: block;
+    margin: 130px auto;
+    width: 90px;
+    color: var(--cor-secundaria);
+    border: 1px solid var(--cor-secundaria);
+    background-color: var(--cor-principal);
+    padding: 4px;
+    border-radius: 4px;
+
+}
+
+/**************** STYLE DO USUARIO **************/
+
+section{
+    display:block;
+    width: 945px;
+    /* background-color:red; */
+    float: right;
+    height: 700px;
+    border-left: 2px solid var(--cor-principal);
+}
+
+aside{
+    display:block;
+    width: 300px;
+    /* background-color: blue; */
+    float: left;
+    height: 700px;
+    padding-top: 40px;
+    
+}
+
+section, aside{
+    position: relative;
+    padding: 0px 10px 10px 10px;
+    margin-top: 50px;
+}
+
+section h1{
+    color: var(--cor-principal);
+    letter-spacing: 1px;
+    font-weight:200;
+    font-size: 32pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section p{
+    color: var(--cor-principal);
+    font-size: 11pt;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+
+.logo-home2{
+    margin-left: -285px;
+    position:absolute;
+    width: 67px;
+    margin-top: -75px;
+
+}
+
+
+.div-info-usu{
+    width: 300px;
+    margin-top: 80px;    
+}
+
+.div-info-usu p{
+    color: black;
+    text-align: center;
+    border-bottom: 2px solid var(--cor-principal);
+    border-right: 2px solid var(--cor-principal);
+
+}
+
+.div-info-usu h5{
+    color: var(--cor-principal);
+    font-weight: 600;
+    font-size: 12pt;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+}
+
+.br-section{
+    margin-top: 500px;
+}
+
+.ico-user{
+    width: 178px;
+    display: block;
+    margin: 40px auto;
+    opacity: 0.8;
+    
+}
+
+ul{
+    display:flex;
+    width: 800px;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+}
+
+li button{
+    color: var(--cor-secundaria);
+    border: 0.8px solid var(--cor-secundaria);
+    background-color: var(--cor-principal);
+    border-radius: 9px;
+    width: 180px;
+    height: 43px;
+    font-size: 10pt;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+
+aside button{
+    color: var(--cor-secundaria);
+    border: 0.8px solid var(--cor-secundaria);
+    background-color: var(--cor-principal);
+    border-radius: 9px;
+    width: 150px;
+    height: 43px;
+    font-size: 10pt;
+    font-weight: bold;
+    display: block;
+    margin: 10px auto;
+    letter-spacing: 1px;
+}
+
+section input{
+    color: black;
+    text-align: center;
+    border-bottom: 2px solid var(--cor-principal);
+    border-right: 2px solid var(--cor-principal);
+    width: 100%;
+    height: 25px;
+   
+}
+
+.div-actions{
+    margin-top: 50px;
+    width: 500px;
+}
+
+section h3{
+    color: var(--cor-principal);
+    font-weight: 600;
 }
