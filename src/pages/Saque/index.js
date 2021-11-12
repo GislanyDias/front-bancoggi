@@ -12,17 +12,13 @@ const Saque = () =>{
     
             <section>
                 <h1>SAQUE</h1>
-                <p>PARA REALIZAR UM SAQUE, DIGITE O VALOR QUE DESEJA RETIRAR E A SUA SENHA. </p>
+                <p>PARA REALIZAR UM SAQUE, DIGITE O VALOR QUE DESEJA RETIRAR. </p>
                 
                 <div className="div-info-usu">
                     <h5>VALOR</h5>
-                    <input type="number"></input>
+                    <input type="number" required></input>
                 </div>
 
-                <div className="div-info-usu">
-                    <h5>SENHA</h5>
-                    <input type ="password"></input>
-                </div>
 
                 <ul className = "div-actions">
                     <li> <Link to ="/Usuario"> <button type="button ">VOLTAR</button> </Link> </li>

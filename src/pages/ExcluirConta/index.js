@@ -17,7 +17,7 @@ const ExcluirConta = () =>{
                 
                 <div className="div-info-usu">
                     <h5>CPF</h5>
-                    <input type="text"></input>
+                    <input type="text" required></input>
                 </div>
 
 

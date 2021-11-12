@@ -16,17 +16,17 @@ const MudarSenha = () =>{
                 
                 <div className="div-info-usu">
                     <h5>SENHA ANTIGA</h5>
-                    <input type="text"></input>
+                    <input type="text" required></input>
                 </div>
 
                 <div className="div-info-usu">
                     <h5>NOVA SENHA</h5>
-                    <input type ="text"></input>
+                    <input type ="text" required></input>
                 </div>
 
                 <div className="div-info-usu">
                     <h5>CONFIRMAR NOVA SENHA</h5>
-                    <input type="password"></input>
+                    <input type="password" required></input>
                 </div>
 
                 <ul className = "div-actions">

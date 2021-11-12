@@ -226,7 +226,7 @@ hr{
     position: relative;
     background-color: var(--cor-principal);
     width: 450px;
-    height: 750px;
+    height: 830px;
     border-radius: 10px;
     margin: -450px auto -100px auto;
     padding: 4px;
@@ -258,6 +258,8 @@ hr{
     border: 1px solid var(--cor-secundaria);
     background-color: var(--cor-principal);
     padding: 4px;
+    text-align: center;
+    text-decoration: none;
     border-radius: 4px;
 
 }
@@ -267,7 +269,6 @@ hr{
 section{
     display:block;
     width: 945px;
-    /* background-color:red; */
     float: right;
     height: 700px;
     border-left: 2px solid var(--cor-principal);
@@ -276,7 +277,6 @@ section{
 aside{
     display:block;
     width: 300px;
-    /* background-color: blue; */
     float: left;
     height: 700px;
     padding-top: 40px;

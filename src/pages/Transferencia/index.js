@@ -13,22 +13,18 @@ const Transferencia = () =>{
     
             <section>
                 <h1>TRANSFERÊNCIA</h1>
-                <p>PARA REALIZAR UMA TRANSFERÊNCIA, DIGITE A CONTA DE DESTINO, O VALOR DA TRANSFERÊNCIA E A SUA SENHA. </p>
+                <p>PARA REALIZAR UMA TRANSFERÊNCIA, DIGITE A CONTA DE DESTINO E O VALOR DA TRANSFERÊNCIA. </p>
                 
                 <div className="div-info-usu">
                     <h5>CONTA DE DESTINO</h5>
-                    <input type="text"></input>
+                    <input type="text" required></input>
                 </div>
 
                 <div className="div-info-usu">
                     <h5>VALOR</h5>
-                    <input type="number"></input>
+                    <input type="number" required></input>
                 </div>
-
-                <div className="div-info-usu">
-                    <h5>SENHA</h5>
-                    <input type ="password"></input>
-                </div>
+                
 
                 <ul className = "div-actions">
                     <li> <Link to ="/Usuario"> <button type="button ">VOLTAR</button> </Link> </li>
